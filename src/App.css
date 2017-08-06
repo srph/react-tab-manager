@@ -1,0 +1,38 @@
+.app {
+  width: 320px;
+}
+
+.panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background: #ddd;
+}
+
+.panel > .heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.panel > .nav {
+  display: flex;
+}
+
+.panel > .nav > a {
+  padding: 8px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.panel > .nav > a.active {
+  opacity: 1;
+}
+
+.content {
+  padding: 8px;
+}
