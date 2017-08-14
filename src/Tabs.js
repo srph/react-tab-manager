@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import T from 'prop-types';
-import View from './TabView';
-import Item from './TabItem';
 
 class Tabs extends Component {
   state = {
@@ -38,8 +36,5 @@ Tabs.propTypes = {
 Tabs.childContextTypes = {
   tabs: T.object
 }
-
-Tabs.View = View;
-Tabs.Item = Item;
 
 export default Tabs;

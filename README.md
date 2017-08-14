@@ -20,26 +20,29 @@ npm i @srph/react-tab-manager
 ## Usage
 ```js
 import React from 'react';
-import Tabs from '@srph/react-tab-manager';
+import Tabs, {TabView, TabItem} from '@srph/react-tab-manager';
 
 class App extends React.Component {
   render() {
     return (
       <Tabs>
-        <div>
-          <nav>
-            <Tabs.Item index={0}>All</Tabs.Item>
-            <Tabs.Item index={1}>Other</Tabs.Item>
-          </nav>
+        <div className="app">
+          <div className="panel">
+            <h4 className="title">Subtasks</h4>
+            <div className="nav">
+              <TabItem index={0}>All</TabItem>
+              <TabItem index={1}>Other</TabItem>
+            </div>
+          </div>
 
           <div className="content">
-            <Tabs.View index={0}>
+            <TabView index={0}>
               Baz!! 
-            </Tabs.View>
+            </TabView>
 
-            <Tabs.View index={1}>
+            <TabView index={1}>
               Bar!!
-            </Tabs.View>
+            </TabView>
           </div>
         </div>
       </Tabs>

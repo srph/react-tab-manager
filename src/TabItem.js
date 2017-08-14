@@ -8,7 +8,7 @@ class TabItem extends Component {
     const ctx = this.context.tabs;
 
     return (
-      <a className={c('item', { [ctx.activeClassName]: ctx.view === this.props.index })}
+      <a className={c(className, { [ctx.activeClassName]: ctx.view === this.props.index })}
         href="#"
         onClick={this.switch}
         {...props} />
@@ -17,6 +17,7 @@ class TabItem extends Component {
 
   switch = () => {
     this.context.tabs.switch(this.props.index);
+    this.props.onClick && this.props.onClick();
   }
 }
 

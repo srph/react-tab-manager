@@ -1,6 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-
-ReactDOM.render(<App />, document.getElementById('root'));
+export {default} from './Tabs';
+export {default as TabItem} from './TabItem';
+export {default as TabView} from './TabView';

@@ -9,10 +9,6 @@ class TabView extends Component {
       ? <div {...props} />
       : <div />;
   }
-
-  switch = () => {
-    this.context.tabs.switch(this.props.index);
-  }
 }
 
 TabView.contextTypes = {
