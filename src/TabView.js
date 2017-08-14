@@ -11,6 +11,10 @@ class TabView extends Component {
   }
 }
 
+TabItem.propTypes = {
+  index: T.number.isRequired
+}
+
 TabView.contextTypes = {
   tabs: T.object
 }

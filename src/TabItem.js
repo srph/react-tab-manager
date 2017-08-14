@@ -21,6 +21,10 @@ class TabItem extends Component {
   }
 }
 
+TabItem.propTypes = {
+  index: T.number.isRequired
+}
+
 TabItem.contextTypes = {
   tabs: T.object
 }
