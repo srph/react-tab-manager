@@ -1,6 +1,8 @@
 # React Tab Manager
 [WIP] Build tab functionalities for complicated layouts. An advanced alternative for react-tabs.
 
+View [demo](http://usher-diana-72251.netlify.com).
+
 ## Why?
 react-tabs works very well, but there are projects where the layout is slightly different from your usual tabs. Usual tabs use the following layout:
 <!-- Insert Image -->
@@ -81,3 +83,20 @@ All other props are passed down to the `div` root element as usual.
 | Prop  | Type | Description |
 | ----- | ---- | ----------- |
 | index | `number` (required) | The number to identify if tab is active |
+
+## Setup
+You can check the [demo](http://usher-diana-72251.netlify.com), or build it yourself locally:
+```bash
+npm install
+npm run start
+```
+
+### Bundling package
+```
+npm run bundle
+```
+
+### Publish storybook
+```
+npm run storybook:publish
+```
