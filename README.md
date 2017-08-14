@@ -1,4 +1,4 @@
-# React Tab Manager
+# React Tab Manager [![npm version](https://img.shields.io/npm/v/@srph/react-tab-manager.svg?style=flat-square)](https://npmjs.com/packages/@srph/react-tab-manager) [![Build Status](https://img.shields.io/travis/srph/react-tab-manager.svg?style=flat-square)](https://travis-ci.org/srph/react-tab-manager?branch=master)
 [WIP] Build tab functionalities for complicated layouts. An advanced alternative for react-tabs.
 
 View [demo](http://usher-diana-72251.netlify.com).
