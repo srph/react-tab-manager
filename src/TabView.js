@@ -11,7 +11,7 @@ class TabView extends Component {
   }
 }
 
-TabItem.propTypes = {
+TabView.propTypes = {
   index: T.number.isRequired
 }
 
