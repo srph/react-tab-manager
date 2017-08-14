@@ -52,3 +52,32 @@ class App extends React.Component {
 
 export default App;
 ```
+
+## API Documentation
+Here's a list of props you may use to customize the component for your use-case:
+
+### Tabs
+
+| Prop  | Type | Description |
+| ----- | ---- | ----------- |
+| activeClassName | `function` | The classname to pass to the active `TabItem`. Defaults to `active`. |
+
+> **NOTE**: `Tabs` render all of the children you provide. It doesn't wrap it with a `div`. If you're using `React <= v15`, you will have to wrap the children you pass with div.
+
+### TabItem
+
+All other props are passed down to the `a` root element as usual.
+
+| Prop  | Type | Description |
+| ----- | ---- | ----------- |
+| index | `number` (required) | The number to be set as active when clicked. |
+
+> **NOTE**: `TabItem` ignores `href`.
+
+### TabView
+
+All other props are passed down to the `div` root element as usual.
+
+| Prop  | Type | Description |
+| ----- | ---- | ----------- |
+| index | `number` (required) | The number to identify if tab is active |
