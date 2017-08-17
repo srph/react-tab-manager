@@ -19,6 +19,16 @@ This library takes advantage of context to pass down data to the navigation and 
 npm i @srph/react-tabs-manager
 ```
 
+### Script tags
+If you're not using a bundler like Browserify or Webpack, simply add the script tag after your React script tag.
+
+```html
+<!-- Script tags for React and other libraries -->
+<script src="https://unpkg.com/@srph/react-tabs-manager/dist/react-tabs-manager.min.js"></script>
+```
+
+This library is exposed as `ReactTabsManager` (e.g., `ReactTabsManager`, `ReactTabsManager.TabView`, `ReactTabsManager.TabItem`).
+
 ## Usage
 View [examples](storybook/tabs-manager.js).
 
