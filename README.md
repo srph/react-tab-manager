@@ -1,7 +1,7 @@
-# React Tab Manager [![npm version](https://img.shields.io/npm/v/@srph/react-tab-manager.svg?style=flat-square)](https://npmjs.com/packages/@srph/react-tab-manager) [![Build Status](https://img.shields.io/travis/srph/react-tab-manager.svg?style=flat-square)](https://travis-ci.org/srph/react-tab-manager?branch=master)
+# React Tabs Manager [![npm version](https://img.shields.io/npm/v/@srph/react-tabs-manager.svg?style=flat-square)](https://npmjs.com/packages/@srph/react-tabs-manager) [![Build Status](https://img.shields.io/travis/srph/react-tabs-manager.svg?style=flat-square)](https://travis-ci.org/srph/react-tabs-manager?branch=master)
 [WIP] Build tab functionalities for complicated layouts. An advanced alternative for react-tabs.
 
-View [demo](http://usher-diana-72251.netlify.com). View [examples](storybook/tab-manager.js).
+View [demo](http://usher-diana-72251.netlify.com). View [examples](storybook/tabs-manager.js).
 
 ## Why?
 react-tabs works very well, but there are projects where the layout is slightly different from your usual tabs. Usual tabs use the following layout:
@@ -16,15 +16,15 @@ This library takes advantage of context to pass down data to the navigation and 
 
 ## Installation
 ```
-npm i @srph/react-tab-manager
+npm i @srph/react-tabs-manager
 ```
 
 ## Usage
-View [examples](storybook/tab-manager.js).
+View [examples](storybook/tabs-manager.js).
 
 ```js
 import React from 'react';
-import Tabs, {TabView, TabItem} from '@srph/react-tab-manager';
+import Tabs, {TabView, TabItem} from '@srph/react-tabs-manager';
 
 class App extends React.Component {
   render() {

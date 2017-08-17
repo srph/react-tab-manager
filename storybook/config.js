@@ -19,7 +19,7 @@ function load() {
     );
   });
 
-  require('./tab-manager');
+  require('./tabs-manager');
 }
 
 configure(load, module);
