@@ -1,7 +1,7 @@
 # React Tabs Manager [![npm version](https://img.shields.io/npm/v/@srph/react-tabs-manager.svg?style=flat-square)](https://npmjs.com/packages/@srph/react-tabs-manager) [![Build Status](https://img.shields.io/travis/srph/react-tabs-manager.svg?style=flat-square)](https://travis-ci.org/srph/react-tabs-manager?branch=master)
 Build tab functionalities for complicated layouts. An advanced alternative for react-tabs.
 
-[View demo](http://usher-diana-72251.netlify.com) / [View examples](storybook/tabs-manager.js).
+[View demo](http://usher-diana-72251.netlify.com) / [View examples](storybook/tabs-manager.js)
 
 ## Why?
 react-tabs works very well, but there are projects where the layout is slightly different from your usual tabs. Usual tabs use the following layout:
