@@ -4,8 +4,8 @@ module.exports = {
   output: {
     path: __dirname + '/dist',
     filename: process.env.NODE_ENV === 'production'
-      ? 'react-date-select.min.js'
-      : 'react-date-select.js'
+      ? 'react-tabs-manager.min.js'
+      : 'react-tabs-manager.js'
   },
 
   module: {
@@ -28,10 +28,5 @@ module.exports = {
         },
       },
     ],
-  },
-
-  externals: [{
-    jquery: 'jQuery',
-    '@srph/jqt': 'jQuery'
-  }]
+  }
 };
