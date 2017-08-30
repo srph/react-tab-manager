@@ -20,11 +20,13 @@ test('it should display active classname and switch to given index when clicked'
   expect(wrapper.find(TabItem).at(1).hasClass('active')).toBe(true)
 })
 
-test('it should pass through props to the node element except index', () => {
+test('it should pass through props to the node element except index, href, and role', () => {
   const onMouseOver = jest.fn()
   const onClick = jest.fn()
-  const wrapper = mount(<Tabs><TabItem index={0} target="_blank" onMouseOver={onMouseOver} onClick={onClick} data-cool="69">foo</TabItem></Tabs>)
+  const wrapper = mount(<Tabs><TabItem index={0} href="xD" target="_blank" onMouseOver={onMouseOver} onClick={onClick} data-cool="69">foo</TabItem></Tabs>)
   expect(wrapper.find('a').prop('index')).toBe(undefined)
+  expect(wrapper.find('a').prop('href')).toBe('#')
+  expect(wrapper.find('a').prop('role')).toBe('button')
   expect(wrapper.find('a').prop('onClick')).not.toBe(onClick)
   expect(wrapper.find('a').prop('data-cool')).toBe('69')
   expect(wrapper.find('a').prop('target')).toBe('_blank')
@@ -37,9 +39,4 @@ test('it should call onClick prop when clicked', () => {
   expect(onClick.mock.calls.length).toEqual(0)
   wrapper.find('a').simulate('click')
   expect(onClick.mock.calls.length).toEqual(1)
-})
-
-test('it should not allow hard coded props to be overriden', () => {
-  const wrapper = mount(<Tabs><TabItem index={0} href="xD">foo</TabItem></Tabs>)
-  expect(wrapper.find('a').prop('href')).toEqual('#')
 })
