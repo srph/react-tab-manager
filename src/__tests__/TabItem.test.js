@@ -38,3 +38,8 @@ test('it should call onClick prop when clicked', () => {
   wrapper.find('a').simulate('click')
   expect(onClick.mock.calls.length).toEqual(1)
 })
+
+test('it should not allow hard coded props to be overriden', () => {
+  const wrapper = mount(<Tabs><TabItem index={0} href="xD">foo</TabItem></Tabs>)
+  expect(wrapper.find('a').prop('href')).toEqual('#')
+})

@@ -8,11 +8,11 @@ class TabItem extends Component {
     const ctx = this.context.tabs;
 
     return (
-      <a className={c(className, { [ctx.activeClassName]: ctx.view === this.props.index })}
+      <a {...props}
+        className={c(className, { [ctx.activeClassName]: ctx.view === this.props.index })}
         role="button"
         href="#"
-        onClick={this.switch}
-        {...props} />
+        onClick={this.switch}  />
     );
   }
 
