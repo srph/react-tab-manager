@@ -4,7 +4,7 @@ import c from 'classnames';
 
 class TabItem extends Component {
   render() {
-    const {index, href, onClick, className, ...props} = this.props;
+    const {index, onClick, className, ...props} = this.props;
     const ctx = this.context.tabs;
 
     return (
