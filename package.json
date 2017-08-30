@@ -4,14 +4,14 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "npm run storybook",
-    "build": "babel src -d lib",
+    "build": "cross-env NODE_ENV=development babel src -d lib",
     "bundle": "npm run bundle:dev && npm run bundle:prod",
-    "bundle:dev": "webpack",
+    "bundle:dev": "cross-env NODE_ENV=development webpack",
     "bundle:prod": "cross-env NODE_ENV=production webpack",
     "postinstall": "npm run build",
     "storybook": "start-storybook -p 9001 -c storybook",
     "storybook:publish": "build-storybook -c storybook",
-    "test": "jest"
+    "test": "cross-env NODE_ENV=test jest"
   },
   "repository": {
     "type": "git",
