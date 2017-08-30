@@ -86,7 +86,7 @@ All other props are passed down to the `a` root element as usual.
 | ----- | ---- | ----------- |
 | index | `number` (required) | The number to be set as active when clicked. |
 
-> **NOTE**: `TabItem` ignores `href`.
+> **NOTE**: `TabItem` ignores `href` and `role`, hard codes the values `#` and `button` respectively.
 
 ### TabView
 
