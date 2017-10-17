@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/srph/react-date-select"
+    "url": "https://github.com/srph/react-tabs-manager"
   },
   "dependencies": {
     "prop-types": "^15.5.10"
