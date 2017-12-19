@@ -1,12 +1,42 @@
+var webpack = require('webpack');
+var path = require('path')
+
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    'react-tabs-manager': './src/index.js',
+    'react-tabs-manager.min': './src/index.js'
+  },
+
+  externals: {
+    'react': {
+      root: 'React',
+      commonjs2: 'react',
+      commonjs: 'react',
+      amd: 'react'
+    },
+    'react-dom': {
+      root: 'ReactDOM',
+      commonjs2: 'react-dom',
+      commonjs: 'react-dom',
+      amd: 'react-dom'
+    }
+  },
 
   output: {
-    path: __dirname + '/dist',
-    filename: process.env.NODE_ENV === 'production'
-      ? 'react-tabs-manager.min.js'
-      : 'react-tabs-manager.js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js',
+    chunkFilename: '[id].chunk.js',
+    libraryTarget: 'umd',
+    library: 'ReactTabsManager',
   },
+
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      include: /\.min\.js$/,
+      minimize: true,
+      compress: { warnings: false }
+    })
+  ],
 
   module: {
     rules: [
@@ -20,6 +50,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
+            presets: ['react', 'es2015', 'stage-1'],
             plugins: [
               require('babel-plugin-transform-react-remove-prop-types').default,
             ],
