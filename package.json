@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npm run storybook",
     "bundle": "cross-env NODE_ENV=production webpack",
-    "postinstall": "npm run build",
+    "prepare": "npm run build",
     "storybook": "start-storybook -p 9001 -c storybook",
     "storybook:publish": "build-storybook -c storybook",
     "test": "cross-env NODE_ENV=test jest .test.js"
