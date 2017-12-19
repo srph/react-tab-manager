@@ -52,7 +52,7 @@ module.exports = {
           options: {
             presets: ['react', 'es2015', 'stage-1'],
             plugins: [
-              require('babel-plugin-transform-react-remove-prop-types').default,
+              'transform-react-remove-prop-types'
             ],
           },
         },
